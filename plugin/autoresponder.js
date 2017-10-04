@@ -8,7 +8,7 @@ module.exports = function(robot) {
     let space = '\n\n';
     let title = '**Issue** description updated by `' + context.payload.sender.login + '`. Previous version was...';
     let body = '';
-    let footer = `*...created by version ${process.env.VERSION}*`;
+    let footer = '*...created by version `' + process.env.VERSION + '`*';
 
     switch(type) {
       case 'diff':
