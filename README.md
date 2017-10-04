@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/DashboardHub/probot-issue-versioning.svg?branch=prototype-v0.1)](https://travis-ci.org/DashboardHub/probot-issue-versioning)
+
 # DashboardHub Probot Issue Versioning
 
 GitHub issue versioning with probot
