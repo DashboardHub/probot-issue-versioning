@@ -1,6 +1,22 @@
-sudo: false
+
 language: node_js
 node_js:
-  - "7.7.1"
-notifications:
-  disabled: true
+  - "8"
+
+branches:
+  only:
+  - "prototype-v0.1"
+
+before_install:
+  - npm install -g serverless
+  - sudo apt-get install python3
+  - sudo pip install awscli
+
+install:
+  - make install
+
+script:
+  - echo 'No tests, this is a PROTOTYPE only'
+
+after_success:
+  - make deploy
