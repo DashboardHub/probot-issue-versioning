@@ -64,7 +64,6 @@ functions:
          method: post
     environment:
       APP_ID: 5649
-      WEBHOOK_SECRET: development
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
