@@ -8,6 +8,7 @@ module.exports = function(robot) {
     let space = '\n\n';
     let title = '**Issue** description updated by `' + context.payload.sender.login + '`. Previous version was...';
     let body = '';
+    let footer = `...version ${process.env.VERSION}`;
 
     switch(type) {
       case 'diff':
@@ -32,7 +33,7 @@ module.exports = function(robot) {
     return github.issues.createComment(
       context.issue(
         {
-          body: `${title} ${space} --- ${space} ${body} ${space} ${space}`
+          body: `${title} ${space} --- ${space} ${body} ${space} --- ${space} ${footer} ${space}`
         }
       )
     );
