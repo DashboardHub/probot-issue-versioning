@@ -2,7 +2,7 @@
 
 # DashboardHub Probot Issue Versioning
 
-GitHub issue versioning with probot
+GitHub issue versioning with probot. Historic versions come in as a **comment**, but default these are `diff`s, however by including `VERSION_TYPE_PLAIN` anywhere in the **Issue** description, it will be `plain text`gi
 
 ## Dependencies
 
