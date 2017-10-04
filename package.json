@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "GitHub issue versioning with probot",
   "author": "Eddie Jaoude <eddie@jaoudestudios.com>",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "repository": {
     "type": "git",
     "url": "git@github.com:DashboardHub/probot-issue-versioning.git"
