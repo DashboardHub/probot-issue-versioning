@@ -19,7 +19,7 @@ module.exports = function(robot) {
           prepend = '';
           if (line.added) { prepend = '+'; }
           if (line.removed) { prepend = '-'; }
-          output += prepend + ' ' + line.value;
+          output += prepend + ' ' + line.value + (/\n$/.test(line.value) ? '' : '\n');
         });
 
         body = '```diff\n' + output + '\n```';
