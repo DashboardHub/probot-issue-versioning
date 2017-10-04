@@ -1,15 +1,20 @@
 {
   "name": "probot-issue-versioning",
   "version": "1.0.0",
-  "description": "",
+  "description": "GitHub issue versioning with probot",
   "author": "Eddie Jaoude <eddie@jaoudestudios.com>",
-  "license": "ISC",
-  "repository": "https://github.com/DashboardHub/probot-issue-versioning.git",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:DashboardHub/probot-issue-versioning.git"
+  },
+  "readme": "README.md",
   "dependencies": {
-    "probot": "0.7.1",
     "babel-core": "6.17.0",
     "babel-plugin-transform-runtime": "6.15.0",
-    "babel-polyfill": "6.16.0"
+    "babel-polyfill": "6.16.0",
+    "diff": "^3.3.1",
+    "probot": "0.7.1"
   },
   "devDependencies": {
     "babel-core": "6.17.0",
